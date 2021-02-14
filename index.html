@@ -24,6 +24,29 @@
     <div class="img-container">
     <img src="pizza.jpg" alt="">
     </div>
+
+
+
+    <script>
+        //selecting all the inputs and saving them in a node list
+        const inputs = document.querySelectorAll(".controls input");
+        
+
+        //the function
+        function handleUpdate() {
+            //suffix for spacing and blur
+            const suffix = this.dataset.sizing || "";
+            //targetting the css variables we created, update the values according to the adjustments made
+            document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+        }
+
+        //adding eventlistener to every input, call function when triggered
+        inputs.forEach(input => input.addEventListener('change', handleUpdate));
+        inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+
+
+
+    </script>
     
 </body>
 </html>

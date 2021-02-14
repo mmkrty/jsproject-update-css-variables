@@ -28,3 +28,7 @@ img {
 .hl {
     color: var(--base);
 }
+
+.controls {
+    padding-bottom: 2rem;
+}

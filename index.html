@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playing with CSS Variables and JS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Solway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
         <label for="blur">Blur:</label>
         <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
 
-        <label for="base">Base Color</label>
+        <label for="base">Base Color:</label>
         <input type="color" name="base"  value="#ffc600">
     </div>
 
@@ -36,7 +38,7 @@
         function handleUpdate() {
             //suffix for spacing and blur
             const suffix = this.dataset.sizing || "";
-            //targetting the css variables we created, update the values according to the adjustments made
+            //targetting the css variables we created, update  the values according to the adjustments made
             document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
         }
 

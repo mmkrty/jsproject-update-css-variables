@@ -13,6 +13,10 @@ body {
     margin: 0;
 }
 
+h2 {
+    font-family: 'Solway', serif;
+}
+
 .img-container {
      width: 80%;
     margin: 0 auto;
@@ -30,5 +34,6 @@ img {
 }
 
 .controls {
+    font-family: 'PT Sans Narrow', sans-serif;
     padding-bottom: 2rem;
 }
